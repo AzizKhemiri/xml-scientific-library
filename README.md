@@ -239,24 +239,6 @@ basex queries/requetes.xq
 
 ---
 
-## 🔍 Exemples XPath commandes
-
-```bash
-# Tous les titres
-xmllint --xpath "//titre/text()" data/catalogue.xml
-
-# Livres sur l'IA
-xmllint --xpath "//livre[domaine='Intelligence Artificielle']/titre/text()" data/catalogue.xml
-
-# Livres publiés après 2015
-xmllint --xpath "//livre[annee>2015]/titre/text()" data/catalogue.xml
-
-# Titre du livre L003
-xmllint --xpath "//livre[@id='L003']/titre/text()" data/catalogue.xml
-```
-
-
----
 
 ## 📖 Ressources
 
