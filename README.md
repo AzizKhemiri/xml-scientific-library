@@ -11,8 +11,6 @@
 - [Prérequis & Installation](#️-prérequis--installation)
 - [Démarrer le projet](#-démarrer-le-projet)
 - [Structure des fichiers](#-structure-des-fichiers)
-- [Exemples XPath](#-exemples-xpath-rapides)
-- [Troubleshooting](#-troubleshooting)
 - [Ressources](#-ressources)
 - [Auteur](#-auteur)
 
@@ -184,9 +182,8 @@ choco install basex
 ```
 Nom     : XML by Red Hat 
 
----
-
-## 📁 Structure des fichiers
+```
+### 📁 Structure des fichiers
 
 ```
 projet-biblio-simple/
