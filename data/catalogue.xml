@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bibliotheque
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../schemas/bibliotheque.xsd">
+
+  <livre id="L001">
+    <titre>Intelligence Artificielle</titre>
+    <auteur>Khadija Ben Abedkader</auteur>
+    <isbn>978-2-1234-5678-9</isbn>
+    <annee>2026</annee>
+    <domaine>Intelligence Artificielle</domaine>
+  </livre>
+
+  <livre id="L002">
+    <titre>Cloud &amp; DevOps</titre>
+    <auteur>Aziz Khemiri</auteur>
+    <isbn>978-2-7440-7441-8</isbn>
+    <annee>2026</annee>
+    <domaine>Informatique</domaine>
+  </livre>
+
+  <livre id="L003">
+    <titre>Réseaux</titre>
+    <auteur>Habib Youssef</auteur>
+    <isbn>978-2-6789-0123-4</isbn>
+    <annee>2026</annee>
+    <domaine>Réseaux</domaine>
+  </livre>
+
+  <livre id="L004">
+    <titre>Deep Learning</titre>
+    <auteur>Lilia Chniti</auteur>
+    <isbn>978-0-2625-3576-4</isbn>
+    <annee>2026</annee>
+    <domaine>Intelligence Artificielle</domaine>
+  </livre>
+
+  <livre id="L005">
+    <titre>Developpement Full Stack</titre>
+    <auteur>Fakher Sayeb</auteur>
+    <isbn>978-2-5678-9012-3</isbn>
+    <annee>2026</annee>
+    <domaine>WEB</domaine>
+  </livre>
+
+</bibliotheque>

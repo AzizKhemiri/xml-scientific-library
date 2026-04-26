@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ISBN  -->
+  <xs:simpleType name="TypeISBN">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="97[89]-\d-\d{4}-\d{4}-\d"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Année -->
+  <xs:simpleType name="TypeAnnee">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1900"/>
+      <xs:maxInclusive value="2030"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Domaine -->
+  <xs:simpleType name="TypeDomaine">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Informatique"/>
+      <xs:enumeration value="WEB"/>
+      <xs:enumeration value="Intelligence Artificielle"/>
+      <xs:enumeration value="Réseaux"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Structure d'un livre -->
+  <xs:element name="bibliotheque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="livre" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="titre"  type="xs:string"/>
+              <xs:element name="auteur" type="xs:string"/>
+              <xs:element name="isbn"   type="TypeISBN"/>
+              <xs:element name="annee"  type="TypeAnnee"/>
+              <xs:element name="domaine" type="TypeDomaine"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:ID" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+
+    <!-- ISBN unique : deux livres ne peuvent pas avoir le même ISBN -->
+    <xs:unique name="UniqueISBN">
+      <xs:selector xpath="livre"/>
+      <xs:field    xpath="isbn"/>
+    </xs:unique>
+
+  </xs:element>
+
+</xs:schema>
