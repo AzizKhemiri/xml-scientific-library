@@ -96,14 +96,6 @@ xsltproc --version
 basex -version
 ```
 
-Résultat attendu :
-
-```
-xmllint: using libxml version 2.x.x
-xsltproc was compiled against libxml 2.x.x
-BaseX 10.x
-```
-
 ---
 
 ### 🐧 Installation sur Linux (Debian / Ubuntu)
@@ -159,20 +151,6 @@ basex -version
 ```bash
 # 1. Dans PowerShell en administrateur :
 wsl --install
-
-# 2. Redémarrer, ouvrir Ubuntu, puis suivre les étapes Linux ci-dessus
-```
-
-#### Option B — Outils natifs via Chocolatey
-
-```bash
-# 1. Installer Chocolatey dans PowerShell (administrateur) :
-Set-ExecutionPolicy Bypass -Scope Process -Force
-iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-
-# 2. Installer les outils :
-choco install xsltproc
-choco install basex
 ```
 
 ---
@@ -180,7 +158,8 @@ choco install basex
 ### 🖥️ Extension VS Code recommandée
 
 ```
-Nom     : XML by Red Hat 
+Extension      : XML by Red Hat 
+Server         : live server
 
 ```
 ### 📁 Structure des fichiers
@@ -226,6 +205,11 @@ xsltproc styles/main.xsl data/catalogue.xml > output/rapport.html
 Ouvrir dans le navigateur :
 
 ```bash
+Methode 1 :
+==> Navigate to outout/rapport.html 
+==> Then clic right button and Open  live server ( Now you can watch the interface of my project in the browser )
+
+Methode 2 :
 open output/rapport.html        # macOS
 xdg-open output/rapport.html    # Linux
 start output/rapport.html       # Windows
@@ -255,4 +239,4 @@ basex queries/requetes.xq
 
 ## 👥 Auteur
 
-**Aziz Khemiri & Khadija Ben Abdlkader**
+**Aziz Khemiri**
