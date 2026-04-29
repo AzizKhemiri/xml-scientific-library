@@ -1,6 +1,3 @@
-(: XQuery : requêtes et statistiques sur le catalogue :)
-(: Commande : basex queries/requetes.xq :)
-
 declare variable $livres := doc('../data/catalogue.xml')//livre;
 
 (: ── Requête 1 : Tous les titres ── :)
