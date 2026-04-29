@@ -199,20 +199,20 @@ data/catalogue.xml validates
 ### 2️⃣ Générer le rapport HTML
 
 ```bash
-xsltproc styles/main.xsl data/catalogue.xml > output/rapport.html
+xsltproc styles/main.xsl data/catalogue.xml > rapport.html
 ```
 
 Ouvrir dans le navigateur :
 
 ```bash
 Methode 1 :
-==> Navigate to outout/rapport.html 
+==> Navigate to rapport.html 
 ==> Then clic right button and Open  live server ( Now you can watch the interface of my project in the browser )
 
 Methode 2 :
-open output/rapport.html        # macOS
-xdg-open output/rapport.html    # Linux
-start output/rapport.html       # Windows
+open rapport.html        # macOS
+xdg-open rapport.html    # Linux
+start rapport.html       # Windows
 ```
 
 ### 3️⃣ Exécuter les requêtes XQuery
